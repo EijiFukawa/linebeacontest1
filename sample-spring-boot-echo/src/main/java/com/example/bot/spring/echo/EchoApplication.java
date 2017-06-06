@@ -65,7 +65,8 @@ public class EchoApplication {
     }
     
     @EventMapping
-    public TextMessage handleTextMessageEvent(MessageEvent<StickerMessageContent> event) {
-    return new TextMessage("スタンプ送信ありがとうございます！");
-    }    
+    public Message handleBeaconMessageEvent(BeaconEvent event) {
+    System.out.println(event.getBeacon().getHwid()); //HWIDを標準出力
+    return new TextMessage("LINE Beanconから通知だよ！砂金さん、ありがとうございました！");
+    }  
 }
