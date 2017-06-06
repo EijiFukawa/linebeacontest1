@@ -43,4 +43,9 @@ public class EchoApplication {
     public void handleDefaultMessageEvent(Event event) {
         System.out.println("event: " + event);
     }
+    
+    @EventMapping
+    public Message handleStickerMessage(MessageEvent<StickerMessageContent> event) {
+    return new TextMessage("スタンプ送信ありがとうございます！");
+    }    
 }
