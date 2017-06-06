@@ -65,7 +65,7 @@ public class EchoApplication {
     }
     
     @EventMapping
-    public Message handleStickerMessage(MessageEvent<StickerMessageContent> event) {
+    public TextMessage handleTextMessageEvent(MessageEvent<StickerMessageContent> event) {
     return new TextMessage("スタンプ送信ありがとうございます！");
     }    
 }
