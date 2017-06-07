@@ -33,7 +33,7 @@ import com.linecorp.bot.model.event.message.ImageMessageContent;
 import com.linecorp.bot.model.event.message.StickerMessageContent;
 import com.linecorp.bot.model.event.message.TextMessageContent;
 
-import com.linecorp.bot.model.event.Message;
+import com.linecorp.bot.model.event.message.Message;
 
 import java.io.IOException;
 import java.util.Date;
