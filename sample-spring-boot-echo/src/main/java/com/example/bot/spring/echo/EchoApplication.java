@@ -15,6 +15,7 @@
  */
 
 package com.example.bot.spring.echo;
+package com.linecorp.bot.model.message;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -38,6 +39,7 @@ import com.linecorp.bot.model.message.Message;
 import java.io.IOException;
 import java.util.Date;
 import java.util.List;
+
 
 @SpringBootApplication
 @LineMessageHandler
