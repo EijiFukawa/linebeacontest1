@@ -27,20 +27,14 @@ import com.linecorp.bot.model.message.TextMessage;
 import com.linecorp.bot.spring.boot.annotation.EventMapping;
 import com.linecorp.bot.spring.boot.annotation.LineMessageHandler;
 
-import com.linecorp.bot.client.LineMessagingService;
-import com.linecorp.bot.model.ReplyMessage;
 import com.linecorp.bot.model.event.BeaconEvent;
-import com.linecorp.bot.model.event.Event;
-import com.linecorp.bot.model.event.MessageEvent;
 import com.linecorp.bot.model.event.beacon.BeaconContent;
-import com.linecorp.bot.model.event.message.MessageContent;
+import com.linecorp.bot.model.event.message.ImageMessageContent;
+import com.linecorp.bot.model.event.message.StickerMessageContent;
 import com.linecorp.bot.model.event.message.TextMessageContent;
-import com.linecorp.bot.model.message.TextMessage;
-import com.linecorp.bot.model.response.BotApiResponse;
-import com.linecorp.bot.spring.boot.annotation.LineBotMessages;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.web.bind.annotation.*;
+import com.nic.linebot.meetbeacon.app.MeetBeaconApplication;
+
+import com.linecorp.bot.model.event.Message;
 
 import java.io.IOException;
 import java.util.Date;
