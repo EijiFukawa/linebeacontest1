@@ -15,7 +15,6 @@
  */
 
 package com.example.bot.spring.echo;
-package com.linecorp.bot.model.message;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
